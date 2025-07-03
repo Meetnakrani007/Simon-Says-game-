@@ -148,3 +148,51 @@ h3 {
     font-size: 2rem;
   }
 }
+
+/* START GAME BUTTON SECTION */
+.start-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+/* Futuristic Neon Start Button */
+#start-btn {
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 600;
+  color: #00ffd5;
+  background-color: transparent;
+  border: 3px solid #00ffd5;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 15px #00ffd5, 0 0 25px #00ffd599;
+}
+
+#start-btn:hover {
+  background-color: rgba(0, 255, 213, 0.1);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffd5, 0 0 35px #00ffd5aa;
+}
+
+#start-btn:active {
+  transform: scale(0.98);
+  box-shadow: 0 0 10px #00ffd5;
+}
+
+#start-btn.hidden {
+  display: none;
+}
+
+/* Responsive Start Button */
+@media (max-width: 600px) {
+  #start-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}
